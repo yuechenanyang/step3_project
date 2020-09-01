@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<%- include ('./header.html')%>
+    <h2>用户列表</h2>
+    <% for(var i = 0; i<userList.length; i++){%>
+        <p><%= userList[i].userName %></p>
+<%}%>
+<%- include ('./footer.html')%>
+</body>
+</html>
